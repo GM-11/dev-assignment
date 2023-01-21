@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 function Card({ imagePath, heading, content }) {
   return (
-    <div className="bg-white p-4 rounded-xl w-72 m-2 my-32 hover:-translate-y-4  ease-in duration-100">
+    <div className="bg-white p-4 rounded-xl w-72 m-2 my-32 hover:-translate-y-4  ease-in duration-100 shadow-gray-800 shadow-md">
       <Image src={imagePath} height={400} width={400} alt="" />
-      <h1 className="text-background text-32l uppercase py-4 font-semibold">
+      <h1 className="text-background text-32l uppercase py-4 font-semibold font-exo">
         {heading}
       </h1>
       <p className="text-background font-thin flex-wrap">{content}</p>

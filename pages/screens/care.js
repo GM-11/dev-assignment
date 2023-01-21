@@ -1,11 +1,14 @@
 import Card from "@/components/card";
 import React from "react";
+import { Element } from "react-scroll";
 
 function Care() {
   return (
+    <Element name = "care">
+
     <div className='bg-[url("/care.png")] bg-cover'>
       <div className="text-white p-5">
-        <h1 className="text-6xl uppercase mt-16 ml-9">Why should you care</h1>
+        <h1 className="text-6xl uppercase mt-16 ml-9 font-exo">Why should you care</h1>
 
         <div className="flex flex-row justify-around ">
           <Card
@@ -17,7 +20,7 @@ function Care() {
             imagePath="/image3.png"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus egestas turpis aenean tempor pretium vel, morbi enim. Pretium, placerat neque dictum nisl ac a elit, pellentesque."
             heading="diagnosis coading"
-          />
+            />
           <Card
             imagePath="/doctors-sitting.png"
             content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus egestas turpis aenean tempor pretium vel, morbi enim. Pretium, placerat neque dictum nisl ac a elit, pellentesque."
@@ -31,6 +34,7 @@ function Care() {
         </button>
       </div>
     </div>
+            </Element>
   );
 }
 

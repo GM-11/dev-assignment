@@ -1,7 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import { Element } from "react-scroll";
+
 function Footer() {
   return (
+    <Element name = "footer">
+
     <div className=" bg-[url('/footer.png')]">
       <div className="grid grid-cols-3 space-x-10 text-white">
         <div className="col-span-1  flex-col flex p-16 justify-start">
@@ -31,6 +35,7 @@ function Footer() {
         Designed by Rohit with love
       </div>
     </div>
+    </Element>
   );
 }
 
