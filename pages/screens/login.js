@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 function Login() {
-  const [isnew, setNew] = useState(false);
+  const [isnew, setNew] = useState(true);
   return (
     <div className="grid md:grid-cols-2 grid-cols-1">
       <div className="col-span-1 bg-[url('/bg.png')] text-white flex flex-col items-center  pb-0">
-        <div className="font-bold uppercase md:text-7xl md:my-12 text-3xl my-4">
+        <div className="font-bold uppercase md:text-7xl md:my-3 text-3xl my-4">
+          <Link href="/" className="font-thin text-sm ml-2">
+            Go back
+          </Link>
           {isnew ? (
             <>
               <p>join</p>
@@ -19,14 +23,14 @@ function Login() {
           )}
         </div>
 
-        <div className="md:flex md:translate-y-8 hidden">
+        <div className="md:flex md:translate-y-8  hidden">
           <Image width={350} height={350} src="/doc-male-2.png" alt="" />
         </div>
         <div className="md:hidden">
           <Image width={250} height={250} src="/doc-male-2.png" alt="" />
         </div>
       </div>
-      <div className="col-span-1 text-background flex flex-col items-center my-48">
+      <div className="col-span-1 text-background  flex flex-col items-center my-48">
         {isnew ? (
           <input
             type="text"
