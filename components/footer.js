@@ -7,7 +7,7 @@ function Footer() {
     <Element name = "footer">
 
     <div className=" bg-[url('/footer.png')]">
-      <div className="grid grid-cols-3 space-x-10 text-white">
+      <div className="grid grid-cols-1 md:grid-cols-3 space-x-10 text-white">
         <div className="col-span-1  flex-col flex p-16 justify-start">
           <Image src="/alivio.png" height={150} width={150} alt="" />
           <p className="py-3 font-thin">
