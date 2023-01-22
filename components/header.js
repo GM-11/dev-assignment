@@ -1,10 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
+import Image from "next/image";
 function Header() {
   return (
     <div className="bg-background text-white hidden rounded-3xl m-5 md:flex md:flex-row md:justify-between">
-      <div className="px-6 py-4">ADILO</div>
+      <div className="px-6 py-4">
+        <Image src="/adilo.png" height={75} width={75} alt=""/>
+      </div>
       <ul className="flex  m-3  flex-row">
         <ScrollLink
           activeClass="active"
